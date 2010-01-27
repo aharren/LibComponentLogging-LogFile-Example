@@ -1,8 +1,9 @@
 
 int main(int argc, char *argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-
-    printf("hello world");
+    
+    // do something
+    printf("hello world\n");
     
     [pool release];
     return 0;
