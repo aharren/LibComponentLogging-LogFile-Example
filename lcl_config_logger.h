@@ -1,3 +1,7 @@
+//
+// logger configuration
+//
+
 
 // Use LCLLogFile as the logging backend.
 #import "LCLLogFile.h"
