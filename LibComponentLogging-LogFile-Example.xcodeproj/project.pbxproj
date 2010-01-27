@@ -6,15 +6,65 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E02B7EBC1110BD430057A5FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E02B7EBB1110BD430057A5FC /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E02B7EB51110BD210057A5FC /* ExampleApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExampleApp; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02B7EBB1110BD430057A5FC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E02B7ED71110BE380057A5FC /* ExampleApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleApp_Prefix.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E02B7EB31110BD210057A5FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		29B97314FDCFA39411CA2CEA /* LogFile */ = {
 			isa = PBXGroup;
 			children = (
+				E02B7ED71110BE380057A5FC /* ExampleApp_Prefix.pch */,
+				E02B7EBB1110BD430057A5FC /* main.m */,
+				E02B7EE51110BE4C0057A5FC /* Products */,
 			);
 			name = LogFile;
 			sourceTree = "<group>";
 		};
+		E02B7EE51110BE4C0057A5FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E02B7EB51110BD210057A5FC /* ExampleApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E02B7EB41110BD210057A5FC /* ExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E02B7EBD1110BD430057A5FC /* Build configuration list for PBXNativeTarget "ExampleApp" */;
+			buildPhases = (
+				E02B7EB21110BD210057A5FC /* Sources */,
+				E02B7EB31110BD210057A5FC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExampleApp;
+			productName = ExampleApp;
+			productReference = E02B7EB51110BD210057A5FC /* ExampleApp */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -27,9 +77,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				E02B7EB41110BD210057A5FC /* ExampleApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E02B7EB21110BD210057A5FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E02B7EBC1110BD430057A5FC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		C01FCF4F08A954540054247B /* Debug */ = {
@@ -58,6 +120,52 @@
 			};
 			name = Release;
 		};
+		E02B7EB71110BD220057A5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ExampleApp_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ExampleApp;
+			};
+			name = Debug;
+		};
+		E02B7EB81110BD220057A5FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ExampleApp_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ExampleApp;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -66,6 +174,15 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E02B7EBD1110BD430057A5FC /* Build configuration list for PBXNativeTarget "ExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E02B7EB71110BD220057A5FC /* Debug */,
+				E02B7EB81110BD220057A5FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
