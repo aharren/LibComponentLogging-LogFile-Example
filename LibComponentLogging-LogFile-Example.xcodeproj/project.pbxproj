@@ -24,6 +24,7 @@
 		E02B7ED71110BE380057A5FC /* ExampleApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleApp_Prefix.pch; sourceTree = "<group>"; };
 		E0BDC4C5111A24FC00AE81B5 /* lcl_config_extensions.template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lcl_config_extensions.template.h; path = "LibComponentLogging-Core/lcl_config_extensions.template.h"; sourceTree = "<group>"; };
 		E0BDC4C6111A250C00AE81B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = "LibComponentLogging-Core/README.md"; sourceTree = "<group>"; };
+		E0BDC4D3111A254700AE81B5 /* lcl_config_extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_extensions.h; sourceTree = "<group>"; };
 		E0E23BD91110C0AE0060E588 /* lcl_config_components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_components.h; sourceTree = "<group>"; };
 		E0E23BDA1110C0CA0060E588 /* lcl_config_logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_logger.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +48,7 @@
 				E02B7ED71110BE380057A5FC /* ExampleApp_Prefix.pch */,
 				E0E23BD91110C0AE0060E588 /* lcl_config_components.h */,
 				E0E23BDA1110C0CA0060E588 /* lcl_config_logger.h */,
+				E0BDC4D3111A254700AE81B5 /* lcl_config_extensions.h */,
 				E02B7EBB1110BD430057A5FC /* main.m */,
 				E02B7EE51110BE4C0057A5FC /* Products */,
 			);
