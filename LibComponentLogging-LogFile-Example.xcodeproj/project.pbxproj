@@ -22,6 +22,8 @@
 		E02B7EB51110BD210057A5FC /* ExampleApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExampleApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02B7EBB1110BD430057A5FC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E02B7ED71110BE380057A5FC /* ExampleApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleApp_Prefix.pch; sourceTree = "<group>"; };
+		E0BDC4C5111A24FC00AE81B5 /* lcl_config_extensions.template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lcl_config_extensions.template.h; path = "LibComponentLogging-Core/lcl_config_extensions.template.h"; sourceTree = "<group>"; };
+		E0BDC4C6111A250C00AE81B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = "LibComponentLogging-Core/README.md"; sourceTree = "<group>"; };
 		E0E23BD91110C0AE0060E588 /* lcl_config_components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_components.h; sourceTree = "<group>"; };
 		E0E23BDA1110C0CA0060E588 /* lcl_config_logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_logger.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,10 +56,12 @@
 		E013E2A31110C03C0008A2B1 /* LibComponentLogging-Core */ = {
 			isa = PBXGroup;
 			children = (
+				E0BDC4C6111A250C00AE81B5 /* README.md */,
 				E013E2A61110C04D0008A2B1 /* lcl.h */,
 				E013E2A71110C04D0008A2B1 /* lcl.m */,
 				E013E2A41110C04D0008A2B1 /* lcl_config_components.template.h */,
 				E013E2A51110C04D0008A2B1 /* lcl_config_logger.template.h */,
+				E0BDC4C5111A24FC00AE81B5 /* lcl_config_extensions.template.h */,
 			);
 			name = "LibComponentLogging-Core";
 			sourceTree = "<group>";
