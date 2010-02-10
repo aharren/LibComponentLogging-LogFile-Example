@@ -3,7 +3,7 @@
 // lcl_config_logger.h
 //
 //
-// Copyright (c) 2008-2009 Arne Harren <ah@0xc0.de>
+// Copyright (c) 2008-2010 Arne Harren <ah@0xc0.de>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -23,25 +23,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-
-// Use LCLLogFile as the logging backend.
+// Use LCLLogFile as the LibComponentLogging logging back-end.
 #import "LCLLogFile.h"
 
-// Tell LCLLogFile the path of the log file as an NSString.
-#define _LCLLogFile_LogFilePath                                                \
-    [NSHomeDirectory() stringByAppendingPathComponent:                         \
-        @"Library/Logs/MyApplication/MyApplication.log"]
-
-// Tell LCLLogFile whether it should append to an existing log file on startup,
-// instead of creating a new log file.
-#define _LCLLogFile_AppendToExistingLogFile                                    \
-    NO
-
-// Tell LCLLogFile the maximum size of a log file in bytes.
-#define _LCLLogFile_MaxLogFileSizeInBytes                                      \
-    64 * 1024
-
-// Tell LCLLogFile whether it should mirror the log messages to stderr
-#define _LCLLogFile_MirrorMessagesToStdErr                                     \
-    NO
+// The detailed configuration of the LCLLogFile class is stored in the
+// LCLLogFileConfig.h file which gets imported by LCLLogFile.h.
 

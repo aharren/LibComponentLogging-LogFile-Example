@@ -22,6 +22,8 @@
 		E02B7ED71110BE380057A5FC /* ExampleApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleApp_Prefix.pch; sourceTree = "<group>"; };
 		E0BDC4C6111A250C00AE81B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = "LibComponentLogging-Core/README.md"; sourceTree = "<group>"; };
 		E0BDC4D3111A254700AE81B5 /* lcl_config_extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_extensions.h; sourceTree = "<group>"; };
+		E0E1B90D11234E68004D052C /* LCLLogFileConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLLogFileConfig.h; sourceTree = "<group>"; };
+		E0E1B91011234EDF004D052C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = "LibComponentLogging-LogFile/README.md"; sourceTree = "<group>"; };
 		E0E23BD91110C0AE0060E588 /* lcl_config_components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_components.h; sourceTree = "<group>"; };
 		E0E23BDA1110C0CA0060E588 /* lcl_config_logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_logger.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +48,7 @@
 				E0E23BD91110C0AE0060E588 /* lcl_config_components.h */,
 				E0E23BDA1110C0CA0060E588 /* lcl_config_logger.h */,
 				E0BDC4D3111A254700AE81B5 /* lcl_config_extensions.h */,
+				E0E1B90D11234E68004D052C /* LCLLogFileConfig.h */,
 				E02B7EBB1110BD430057A5FC /* main.m */,
 				E02B7EE51110BE4C0057A5FC /* Products */,
 			);
@@ -65,6 +68,7 @@
 		E028D14D1110C451003392A8 /* LibComponentLogging-LogFile */ = {
 			isa = PBXGroup;
 			children = (
+				E0E1B91011234EDF004D052C /* README.md */,
 				E028D14F1110C463003392A8 /* LCLLogFile.h */,
 				E028D1501110C463003392A8 /* LCLLogFile.m */,
 			);
