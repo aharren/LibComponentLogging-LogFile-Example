@@ -2,7 +2,7 @@
 
 # LibComponentLogging-Core
 
-[http://0xc0.de/LibComponentLogging](http://0xc0.de/LibComponentLogging)
+[http://0xc0.de/LibComponentLogging](http://0xc0.de/LibComponentLogging)    
 [http://github.com/aharren/LibComponentLogging-Core](http://github.com/aharren/LibComponentLogging-Core)
 
 
@@ -31,6 +31,8 @@ LogFile logger, from their repositories on GitHub:
 * [SystemLog Logger](http://github.com/aharren/LibComponentLogging-SystemLog/downloads)
 
 * [NSLog Logger](http://github.com/aharren/LibComponentLogging-NSLog/downloads)
+
+* [NSLogger Logger](http://github.com/aharren/LibComponentLogging-NSLogger/downloads)
 
 Extract the files and copy the extracted files to your application's source
 directory.
@@ -85,6 +87,15 @@ The following Git repositories are related to this repository:
   information about the log level, the log component, and the log statement's
   location (file name and line number).
 
+* [LibComponentLogging-NSLogger](http://github.com/aharren/LibComponentLogging-NSLogger):
+  A logger which integrates the logging client from Florent Pillet's NSLogger project.    
+  See [http://github.com/fpillet/NSLogger](http://github.com/fpillet/NSLogger) for more details about NSLogger.
+
+* [LibComponentLogging-qlog](http://github.com/aharren/LibComponentLogging-qlog):
+  An extension which provides a set of quick logging macros.
+
+* [LibComponentLogging-UserDefaults](http://github.com/aharren/LibComponentLogging-UserDefaults)
+  An extension which stores/restores log level settings to/from the user defaults.
 
 ## Copyright and License
 
