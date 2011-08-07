@@ -20,6 +20,8 @@
 		E02B7EB51110BD210057A5FC /* ExampleApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExampleApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02B7EBB1110BD430057A5FC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E02B7ED71110BE380057A5FC /* ExampleApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleApp_Prefix.pch; sourceTree = "<group>"; };
+		E039619913EECB7800D0490D /* qlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = qlog.h; path = "LibComponentLogging-qlog/qlog.h"; sourceTree = "<group>"; };
+		E039619A13EECB7800D0490D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = "LibComponentLogging-qlog/README.md"; sourceTree = "<group>"; };
 		E0BDC4C6111A250C00AE81B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = "LibComponentLogging-Core/README.md"; sourceTree = "<group>"; };
 		E0BDC4D3111A254700AE81B5 /* lcl_config_extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_extensions.h; sourceTree = "<group>"; };
 		E0CF733B1286F15400624A9F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 				E0CF733B1286F15400624A9F /* README.md */,
 				E013E2A31110C03C0008A2B1 /* LibComponentLogging-Core */,
 				E028D14D1110C451003392A8 /* LibComponentLogging-LogFile */,
+				E039619813EECB1D00D0490D /* LibComponentLogging-qlog */,
 				E02B7ED71110BE380057A5FC /* ExampleApp_Prefix.pch */,
 				E0E23BD91110C0AE0060E588 /* lcl_config_components.h */,
 				E0E23BDA1110C0CA0060E588 /* lcl_config_logger.h */,
@@ -83,6 +86,15 @@
 				E02B7EB51110BD210057A5FC /* ExampleApp */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E039619813EECB1D00D0490D /* LibComponentLogging-qlog */ = {
+			isa = PBXGroup;
+			children = (
+				E039619913EECB7800D0490D /* qlog.h */,
+				E039619A13EECB7800D0490D /* README.md */,
+			);
+			name = "LibComponentLogging-qlog";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -11,8 +11,8 @@
 An example Xcode project which uses the LibComponentLogging-LogFile logger.
 
 This repository contains an Xcode project, the Core files of LibComponentLogging,
-the LogFile logging back-end, some preconfigured log components, and some example
-logging calls in the main.m file.
+the LogFile logging back-end, the qlog extension, some preconfigured log
+components, and some example logging calls in the main.m file.
 
 
 ## Related Repositories
@@ -24,6 +24,9 @@ The following Git repositories are related to this repository:
 
 * [http://github.com/aharren/LibComponentLogging-LogFile](http://github.com/aharren/LibComponentLogging-LogFile):
   A file logging class which writes log messages to an application-specific log file.
+
+* [http://github.com/aharren/LibComponentLogging-qlog](http://github.com/aharren/LibComponentLogging-qlog):
+  A set of quick logging macros.
 
 
 ## Copyright and License
