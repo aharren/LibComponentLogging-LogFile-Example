@@ -139,6 +139,12 @@ const char * const _LCLLogFile_levelHeader[] = {
 };
 
 
+// __has_feature for non-clang compilers
+#if !defined(__has_feature)
+#define __has_feature(_feature) 0
+#endif
+
+
 // ARC defines for non-ARC builds
 #if !__has_feature(objc_arc)
 #ifndef __bridge
