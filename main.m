@@ -61,6 +61,21 @@ int main(int argc, char *argv[]) {
     // log again
     qlinfo(@"info message %d using qlog", 2);
     
+    //
+    // logging with qlog_if macros:
+    //
+    
+    int q = 0;
+    
+    // log
+    qlerror_if(q, @"error!");
+    
+    // change q
+    q = 1;
+    
+    // log
+    qlerror_if(q, @"error!");
+    
     [pool release];
     return 0;
 }
