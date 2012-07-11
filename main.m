@@ -33,6 +33,20 @@ int main(int argc, char *argv[]) {
     // log again
     lcl_log(lcl_cMain, lcl_vInfo, @"log message %d", 2);
     
+    //
+    // logging with lcl_log_if macros:
+    //
+    
+    int p = 0;
+    
+    // log
+    lcl_log_if(lcl_cMain, lcl_vInfo, p > 0, @"log message %d", 1);
+
+    // change p
+    p = 1;
+    
+    // log
+    lcl_log_if(lcl_cMain, lcl_vInfo, p > 0, @"log message %d", 1);
     
     //
     // logging with qlog macros:
