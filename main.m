@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
     
     // show the name of the log file
-    printf("log messages are written to %s\n", [[LCLLogFile path] UTF8String]);
+    printf("Log messages are written to %s. You can open Console.app to view the log file, it's listed in the ~/Library/Logs section.\n", [[LCLLogFile path] UTF8String]);
     
     // enable logging for all components up to level Debug
     lcl_configure_by_name("*", lcl_vTrace);
