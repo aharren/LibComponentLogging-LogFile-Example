@@ -3,7 +3,7 @@
 // LCLLogFile.m
 //
 //
-// Copyright (c) 2008-2011 Arne Harren <ah@0xc0.de>
+// Copyright (c) 2008-2012 Arne Harren <ah@0xc0.de>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -514,7 +514,18 @@ static void _LCLLogFile_log(const char *identifier_c, uint32_t level,
     // write log message if the log file is opened or mirroring is enabled
     if (_LCLLogFile_fileHandle || _LCLLogFile_mirrorToStdErr) {
         // create log message
+#       ifndef _LCL_NO_IGNORE_WARNINGS
+#           ifdef __clang__
+#           pragma clang diagnostic push
+#           pragma clang diagnostic ignored "-Wformat-nonliteral"
+#           endif
+#       endif
         NSString *message = [[NSString alloc] initWithFormat:format arguments:args];
+#       ifndef _LCL_NO_IGNORE_WARNINGS
+#           ifdef __clang__
+#           pragma clang diagnostic pop
+#           endif
+#       endif
         
         // write log message
         _LCLLogFile_log(identifier, level, path, line, function, message);
@@ -703,16 +714,6 @@ static void _LCLLogFile_log(const char *identifier_c, uint32_t level,
     }
     [_LCLLogFile_lock unlock];
     return sz;
-}
-
-// Returns the version of LCLLogFile.
-+ (NSString *)version {
-#define __lcl_version_to_string( _text) __lcl_version_to_string0(_text)
-#define __lcl_version_to_string0(_text) #_text
-    return @__lcl_version_to_string(_LCLLOGFILE_VERSION_MAJOR)
-    "."     __lcl_version_to_string(_LCLLOGFILE_VERSION_MINOR)
-    "."     __lcl_version_to_string(_LCLLOGFILE_VERSION_BUILD)
-    ""      _LCLLOGFILE_VERSION_SUFFIX;
 }
 
 // Opens the log file.
